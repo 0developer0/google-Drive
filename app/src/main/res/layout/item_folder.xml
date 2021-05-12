@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_margin="2dp"
+    >
+
+    <ImageView
+        android:id="@+id/img_folder_cover"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:scaleType="centerCrop"
+        android:foreground="?selectableItemBackgroundBorderless"
+        />
+
+    <TextView
+        android:id="@+id/tv_folderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|bottom"
+        android:text="@string/camera"
+        android:textSize="12sp"
+        android:layout_marginStart="2dp"
+        android:textColor="@color/blue_500"
+        android:fontFamily="@font/product_sans_regular"
+        android:gravity="center"
+        android:drawablePadding="2dp"
+        app:drawableStartCompat="@drawable/ic_folder_open"
+        />
+
+    <TextView
+        android:id="@+id/tv_imgsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:text=""
+        android:textSize="12sp"
+        android:textColor="@color/blue_500"
+        android:fontFamily="@font/product_sans_regular"
+        android:gravity="end|bottom"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="2dp"
+        />
+</FrameLayout>
